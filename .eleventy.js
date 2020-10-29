@@ -5,16 +5,16 @@ module.exports = config => {
 	config.setDataDeepMerge(true);
 
 	// Returns work items, sorted by display order
-	config.addCollection('work', collection => {
+	config.addCollection('blog', collection => {
   return collection
-    .getFilteredByGlob('./src/work/*.md')
+    .getFilteredByGlob('./src/blog/*.md')
     .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
 	});
 
 	// Returns "featured" work items, sorted by display order
 	config.addCollection('featuredWork', collection => {
   return collection
-    .getFilteredByGlob('./src/work/*.md')
+    .getFilteredByGlob('./src/post/*.md')
     .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
     .filter(x => x.data.featured);
 	});

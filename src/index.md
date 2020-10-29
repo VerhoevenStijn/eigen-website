@@ -1,6 +1,6 @@
 ---
 title: 'Homepage'
-layout: 'layouts/page.html'
+layout: 'layouts/home.html'
 custom_css: "
 #lijnen{
   border-bottom: 1rem solid white;
@@ -72,8 +72,3 @@ custom_css: "
 ---
 
 ### shapes - zweef mee door deze portfoliowebsite
-
-  <div class="lijn"></div>
-  <div class="cirkel"></div>
-  <div class="vierkant"></div>
-  <div class="vierkantTwee"></div>
