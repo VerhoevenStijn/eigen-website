@@ -3,10 +3,10 @@
 {% block content %}
 {{ content | safe }}
 {% for item in collections.blog %}
-  <a href="{{ item.url }}" class="grid">
+    <div class="grid">
     <h3>{{ item.data.title }}</h3>
-    <p>{{ item.data.summary }}</p>
+    <p>{{ item.data.summary }} <a href="{{ item.url }}">Continue reading</a></p>
     <img src="{{ item.data.image }}" alt=""/>
-  </a>
+    </div>
 {% endfor %}
 {% endblock %}

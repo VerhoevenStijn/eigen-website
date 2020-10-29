@@ -15,6 +15,7 @@ main img{
   background-color: #FFA015;
   text-decoration;
 }
+
 @media (min-width: 800px) {
   .grid{
     display: grid;
