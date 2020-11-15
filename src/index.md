@@ -37,7 +37,7 @@ custom_css: ""
 
   <div class="mySlides fade">
     <img src="../img/afbe3.jpeg" style="width:100%">
-    <div class="text">Marketing Strategist</div>
+    <div class="text">Marketing Strategist - </div>
   </div>
 
   <!-- Next and previous buttons -->
