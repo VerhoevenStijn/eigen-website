@@ -1,4 +1,4 @@
-<h1><span><a href="{{ site.url }}">{{ site.name }}</a></span></h1>
+<img src="../img/logo2.svg" alt="" class="logo">
 
 <nav class="dropdown">
 	<div class="container" onclick="myFunction(this)">
@@ -9,7 +9,7 @@
 	<ul id="myDropdown" class="dropdown-content close">
 	  {% for item in navigatie.items %}
 	  <li>
-	    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+	    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} class="border-animatie">{{ item.text }}</a>
 	  </li>
 	  {% endfor %}
 	</ul>
